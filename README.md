@@ -1,1 +1,1 @@
-<p>This is Library Management System</p>
+<p>This is python based Library Management System</p>
