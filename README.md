@@ -53,24 +53,17 @@ Before running the code, you can interact with the library management system by 
 
 ## Class Overview
 
-### `LibraryBook`
-- Represents a book in the library.
-- Attributes:
-  - `title`: The title of the book.
-  - `author`: The author of the book.
-  - `book_id`: A unique identifier for the book.
-  - `issued_to`: The library member to whom the book is currently issued.
+### LibraryMember
 
-### `Library`
-- Manages the library's books and members.
-- Methods:
-  - `add_book(title, author)`: Add a new book to the library.
-  - `display_books()`: Display a list of all books in the library.
-  - `borrow_book(member_id, book_id)`: Allow a library member to borrow a book.
-  - `return_book(member_id, book_id)`: Record the return of a book by a member.
-  - `display_borrowed_books()`: Display a list of borrowed books and the members who have them.
-  - `save_books_to_csv()`: Save the library's book data to a CSV file.
-  - `load_books_from_csv()`: Load book data from a CSV file.
+The `LibraryMember` class represents a library member with attributes such as `name`, `member_id`, and `books_issued`. It provides functionality to issue and return books, as well as display the books currently issued by the member.
+
+### LibraryBook Class
+
+The LibraryBook class is designed to represent individual books in the library. Each instance of this class contains information about a specific book, including its title and book ID. It also keeps track of whether the book is currently issued to a library member.
+
+###Library
+
+The `Library` class manages the library system. It keeps track of the library members, the available books, and the transactions. This class provides methods to add users, display users, save members to a CSV file, save transactions to a CSV file, and load members from a CSV file.
 
 ## CSV Data Storage
 
@@ -84,17 +77,7 @@ Make sure you have write permissions for the directory where the code is located
 
 This is a simple library management system implemented in Python. It consists of two main classes: `LibraryMember` and `Library`, along with the necessary CSV file handling for data persistence.
 
-## LibraryMember
 
-The `LibraryMember` class represents a library member with attributes such as `name`, `member_id`, and `books_issued`. It provides functionality to issue and return books, as well as display the books currently issued by the member.
-
-## LibraryBook Class
-
-The LibraryBook class is designed to represent individual books in the library. Each instance of this class contains information about a specific book, including its title and book ID. It also keeps track of whether the book is currently issued to a library member.
-
-## Library
-
-The `Library` class manages the library system. It keeps track of the library members, the available books, and the transactions. This class provides methods to add users, display users, save members to a CSV file, save transactions to a CSV file, and load members from a CSV file.
 
 ### Functionality
 
