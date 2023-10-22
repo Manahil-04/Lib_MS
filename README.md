@@ -3,53 +3,11 @@
 This is a Python library management system that allows you to manage a library's book collection, track members, and record book transactions. You can add books, check out books to library members, return books, and view the status of books in the library. This system also provides the ability to save and load library data to and from a CSV file for data persistence.
 
 ## Table of Contents
-- [Setup](#setup)
-- [Usage](#usage)
 - [Class Overview](#class-overview)
 - [CSV Data Storage](#csv-data-storage)
+- [Setup](#setup)
+- [Usage](#usage)
 
-## Setup
-1. Ensure you have Python installed on your system.
-2. Download the code and save it to your desired directory.
-
-## Usage
-
-Before running the code, you can interact with the library management system by executing it in a Python environment. Here's how you can use the available functionality:
-
-1. **Create a Library Object:**
-   ```python
-   library = Library()
-   ```
-
-2. **Add Books:**
-   ```python
-   library.add_book("Book Title", "Author Name")
-   ```
-
-3. **Display Books:**
-   ```python
-   library.display_books()
-   ```
-
-4. **Add Members:**
-   ```python
-   library.add_member("Member Name")
-   ```
-
-5. **Borrow a Book:**
-   ```python
-   library.borrow_book(member_id, book_id)
-   ```
-
-6. **Return a Book:**
-   ```python
-   library.return_book(member_id, book_id)
-   ```
-
-7. **Display Borrowed Books:**
-   ```python
-   library.display_borrowed_books()
-   ```
 
 ## Class Overview
 
@@ -94,8 +52,48 @@ The system uses CSV files for data persistence. The following files are used:
 - `members.csv`: Contains data related to the library members.
 - `transactions.csv`: Contains data related to the transactions performed in the library.
 
+## Setup
+1. Ensure you have Python installed on your system.
+2. Download the code and save it to your desired directory.
+
 ## Usage
 
+Before running the code, you can interact with the library management system by executing it in a Python environment. Here's how you can use the available functionality:
+
+1. **Create a Library Object:**
+   ```python
+   library = Library()
+   ```
+
+2. **Add Books:**
+   ```python
+   library.add_book("Book Title", "Author Name")
+   ```
+
+3. **Display Books:**
+   ```python
+   library.display_books()
+   ```
+
+4. **Add Members:**
+   ```python
+   library.add_member("Member Name")
+   ```
+
+5. **Borrow a Book:**
+   ```python
+   library.borrow_book(member_id, book_id)
+   ```
+
+6. **Return a Book:**
+   ```python
+   library.return_book(member_id, book_id)
+   ```
+
+7. **Display Borrowed Books:**
+   ```python
+   library.display_borrowed_books()
+   ```
 You can use this library management system to manage users, books, and their transactions within a library. It provides basic functionalities for issuing and returning books, displaying user information, and persisting data to CSV files for future use.
 
 Please ensure that you have the necessary CSV files (`members.csv` and `transactions.csv`) in the working directory for the system to function correctly.
