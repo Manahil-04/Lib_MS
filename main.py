@@ -108,11 +108,6 @@ class Library:
         except FileNotFoundError:
             pass 
 
-    def __init__(self):
-        self.books = []
-        self.members = []
-        self.transactions = [] 
-
     def add_book(self, title, author):
         book_id = len(self.books) + 1
         book = LibraryBook(title, author, book_id)
