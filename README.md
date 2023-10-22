@@ -29,4 +29,8 @@ The system uses CSV files for data persistence. The following files are used:
 
 You can use this library management system to manage users, books, and their transactions within a library. It provides basic functionalities for issuing and returning books, displaying user information, and persisting data to CSV files for future use.
 
+<<<<<<< HEAD
 Please ensure that you have the necessary CSV files (`members.csv` and `transactions.csv`) in the working directory for the system to function correctly.
+=======
+Please ensure that you have the necessary CSV files (`members.csv` and `transactions.csv`) in the working directory for the system to function correctly.
+>>>>>>> 5447ffc5049e595357f2c19935871d96903685b7

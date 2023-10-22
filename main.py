@@ -21,7 +21,7 @@ class LibraryMember:
             print(book.title)
 
 
-class Library:
+class Library_info_Members:
     def __init__(self):
         self.members = []
         self.books = []
